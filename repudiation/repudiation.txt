@@ -1,2 +1,11 @@
 - Briefly explain the vulnerability and why the secure version is better at preventing repudiation than the insecure version.
+
+In insecure we donot have any way to go back and know what went wrong in the website.
+Hence , here we are maintaining a secure log which has a custom mechanisms to secure the log which has every information about the incoming requests.
+Due to this we will be able to save and keep track of the information.
+So if any point there is a problem in the website we can console log the log file to see the error and counter it.
+
+
 - What additional security mechanisms can you incorporate to prevent such attacks?
+Make the log immutable.
+Do something which can audit the logs.
